@@ -25,7 +25,7 @@ import os
 import logging
 from contextlib import contextmanager
 from urllib.parse import urlparse
-from tensorflow import gfile
+from tensorflow.io import gfile
 
 from lucid.misc.io.scoping import scope_url
 
@@ -66,7 +66,7 @@ def write_handle(path, mode=None):
     path = scope_url(path)
 
     if _supports_make_dirs(path):
-        gfile.MakeDirs(os.path.dirname(path))
+        gfile.makedirs(os.path.dirname(path))
 
     if mode is None:
         if _supports_binary_writing(path):
