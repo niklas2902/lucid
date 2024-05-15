@@ -22,7 +22,7 @@ You can either use the provided `get_model` function, or directly access the
 from __future__ import absolute_import, division, print_function
 
 import inspect
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from lucid.modelzoo import vision_models
 from lucid.modelzoo import vision_base
