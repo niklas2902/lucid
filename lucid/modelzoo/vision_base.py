@@ -19,7 +19,7 @@ import warnings
 import logging
 from itertools import chain
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
 
 from lucid.modelzoo import util as model_util
