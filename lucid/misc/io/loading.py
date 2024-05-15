@@ -29,7 +29,7 @@ import pickle
 
 import numpy as np
 import PIL.Image
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from google.protobuf.message import DecodeError
 
