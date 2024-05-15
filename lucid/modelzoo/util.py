@@ -17,7 +17,7 @@
 
 from __future__ import absolute_import, division, print_function
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import json
 from google.protobuf.message import DecodeError
 import logging
