@@ -74,6 +74,6 @@ def write_handle(path, mode=None):
         else:
             mode = "w"
 
-    handle = gfile.Open(path, mode)
+    handle = gfile.open(path, mode)
     yield handle
     handle.close()
