@@ -20,7 +20,7 @@ import itertools
 from collections import defaultdict
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from lucid.misc.iter_nd_utils import recursive_enumerate_nd, dict_to_ndarray, batch_iter
 
