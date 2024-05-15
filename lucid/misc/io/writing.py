@@ -73,5 +73,5 @@ def write_handle(path, mode=None):
             mode = "wb"
         else:
             mode = "w"
-    with tf.io.gfile.GFile(path, mode) as handle:
+    with gfile.GFile(path, mode) as handle:
         yield handle
